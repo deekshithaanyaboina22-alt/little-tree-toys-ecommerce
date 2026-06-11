@@ -1,0 +1,231 @@
+.account-section {
+  min-height: 80vh;
+  background-color: #f8f3ed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+}
+
+.account-card {
+  background: white;
+  max-width: 600px;
+  width: 100%;
+
+  padding: 50px;
+  border-radius: 16px;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.account-card h1 {
+  color: #4b3226;
+  font-size: 42px;
+  margin-bottom: 15px;
+
+  font-family: 'Playfair Display', serif;
+}
+
+.account-subtitle {
+  color: #6e5847;
+  margin-bottom: 35px;
+  font-size: 17px;
+}
+
+.account-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  margin-bottom: 35px;
+}
+
+.account-actions button {
+  padding: 14px 28px;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  background-color: #4b3226;
+  color: white;
+
+  font-size: 16px;
+}
+
+.secondary-btn {
+  background-color: #d8c5b3 !important;
+  color: #4b3226 !important;
+}
+
+.account-info {
+  color: #6e5847;
+  line-height: 1.8;
+}
+
+.account-info p {
+  color: #6e5847;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.account-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  margin-bottom: 30px;
+  margin-top: auto;
+}
+
+.account-links button {
+  background-color: #f8f3ed;
+
+  color: #4b3226;
+
+  border: 1px solid #d8c5b3;
+
+  padding: 10px 16px;
+
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  transition: 0.3s ease;
+}
+
+.account-links button:hover {
+  background-color: #4b3226;
+  color: white;
+}
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+  margin-top: 20px;
+}
+
+.account-form input {
+  padding: 14px;
+
+  border: 1px solid #d8c5b3;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+}
+
+.submit-btn {
+  background-color: #4b3226;
+
+  color: white;
+
+  border: none;
+
+  padding: 14px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  margin-top: 10px;
+}
+
+.profile-details {
+  text-align: left;
+  margin: 30px 0;
+  padding: 25px;
+  background: #f8f3ed;
+  border-radius: 12px;
+}
+
+.profile-details h3 {
+  margin-bottom: 20px;
+  color: #6e5847;
+}
+
+.profile-item {
+  margin-bottom: 16px;
+}
+
+.profile-item span {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #8a7563;
+  margin-bottom: 4px;
+}
+
+.profile-item p {
+  margin: 0;
+  color: #4f4033;
+}
+
+.account-form {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.account-form h3 {
+  margin-bottom: 20px;
+  color: #6e5847;
+  font-size: 20px
+
+}
+
+.account-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #6e5847;
+}
+
+.account-form input,
+.account-form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+
+  border: 1px solid #d8cfc5;
+  border-radius: 10px;
+
+  background-color: #faf7f3;
+
+  font-size: 15px;
+  color: #4f4033;
+}
+
+.account-form input:focus,
+.account-form textarea:focus {
+  outline: none;
+  border-color: #b99b7a;
+}
+
+@media (max-width: 768px) {
+
+  .account-card {
+    padding: 35px 25px;
+  }
+
+  .account-card h1 {
+    font-size: 32px;
+  }
+
+  .account-actions {
+    flex-direction: column;
+  }
+
+}

@@ -1,0 +1,46 @@
+.order-confirmed {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f3ed;
+  padding: 20px;
+}
+
+.order-confirmed-card {
+  background: white;
+  padding: 50px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.order-confirmed-card h1 {
+  color: #4b3226;
+  margin-bottom: 25px;
+  font-family: 'Playfair Display', serif;
+}
+
+.order-confirmed-card p {
+  color: #6e5847;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.order-id {
+  font-weight: 600;
+  color: #4b3226;
+  margin-top: 25px;
+}
+
+.order-confirmed-card button {
+  margin-top: 30px;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  background: #4b3226;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}

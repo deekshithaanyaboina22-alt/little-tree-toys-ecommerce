@@ -1,0 +1,133 @@
+.featured-section {
+  padding: 80px 100px;
+  background-color: #fffaf4;
+}
+
+.featured-section h2 {
+  text-align: center;
+  font-size: 42px;
+  color: #4b3226;
+  margin-bottom: 55px;
+  font-family: 'Playfair Display', serif;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px; /* reduced from 90px */
+  max-width: 1000px;
+  margin: auto;
+}
+
+.featured-card {
+  background-color: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  height: auto;   /* IMPORTANT */
+}
+
+
+.featured-card:hover {
+  transform: translateY(-6px);
+}
+
+.featured-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain; /* IMPORTANT CHANGE */
+}
+
+.featured-content {
+  padding: 24px;
+}
+
+.featured-content h3 {
+  font-size: 28px;
+  color: #4b3226;
+  margin-bottom: 12px;
+  font-family: 'Playfair Display', serif;
+
+  /* TEXT FIX */
+  overflow-wrap: break-word;
+}
+
+.featured-content p {
+  color: #6e5847;
+  line-height: 1.7;
+  margin-bottom: 20px;
+
+  /* TEXT FIX */
+  overflow-wrap: break-word;
+}
+
+.featured-content button {
+  background-color: #6b4226;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.featured-content button:hover {
+  background-color: #4b3226;
+}
+
+/* ===================== */
+/* RESPONSIVE FIX */
+/* ===================== */
+
+@media (max-width: 1024px) {
+  .featured-section {
+    padding:  30px 50px 70px ;
+  }
+
+  .featured-grid {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-section {
+    padding: 20px 20px 60px ;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .featured-card img {
+    height: 260px;
+  }
+
+  .featured-content h3 {
+    font-size: 22px;
+  }
+
+  .featured-content p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .featured-card img {
+    height: 300px;
+    object-position: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .featured-card img {
+    max-height: 260px;
+    width: 100%;
+    object-fit: contain;
+  }
+}

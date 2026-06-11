@@ -1,0 +1,44 @@
+.category-section {
+  padding: 100px 80px;
+}
+
+.category-header {
+  margin-bottom: 50px;
+}
+
+.category-header h2 {
+  font-size: 42px;
+  color: #4b3226;
+  font-family: 'Playfair Display', serif;
+}
+
+.category-products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+@media (max-width: 992px) {
+
+  .category-products {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .category-section {
+    padding: 80px 24px;
+  }
+
+  .category-header h2 {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .category-products {
+    gap: 36px;
+  }
+
+}

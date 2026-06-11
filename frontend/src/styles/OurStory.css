@@ -1,0 +1,67 @@
+.story-section {
+  padding: 110px 140px;
+  background-color: #f8f3ed;
+}
+
+.story-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.story-content h2 {
+  font-size: 42px;
+  color: #4b3226;
+  margin-bottom: 40px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.story-content p {
+  color: #6e5847;
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 28px;
+  text-align: justify;
+}
+
+/* ===================== */
+/* RESPONSIVE */
+/* ===================== */
+
+@media (max-width: 1024px) {
+  .story-section {
+    padding: 90px 60px;
+  }
+
+  .story-content {
+    max-width: 700px;
+  }
+
+  .story-content h2 {
+    font-size: 34px;
+    white-space: nowrap;
+    text-align: center;
+}
+}
+
+@media (max-width: 768px) {
+  .story-section {
+    padding: 70px 20px;
+  }
+
+  .story-content {
+    max-width: 100%;
+  }
+
+  .story-content h2 {
+    font-size: 32px;
+    white-space: normal;
+  }
+
+  .story-content p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}

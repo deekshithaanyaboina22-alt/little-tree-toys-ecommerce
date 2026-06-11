@@ -1,0 +1,66 @@
+.collections-section {
+  padding: 70px 60px;
+  background-color: #f7f1e8;
+}
+
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 90px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.collection-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.collection-card img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.collection-card:hover img {
+  transform: scale(1.05);
+}
+
+.collection-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(
+    transparent,
+    rgba(59, 38, 25, 0.75)
+  );
+}
+
+.collection-overlay h3 {
+  color: #f5e6cc;
+  font-size: 28px;
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+.card-1 img {
+  object-position: top;
+}
+
+@media (max-width: 768px) {
+  .collection-card img {
+    height: auto;
+    object-fit: contain;
+    max-height: 260px;
+    background: #fff;
+  }
+}
