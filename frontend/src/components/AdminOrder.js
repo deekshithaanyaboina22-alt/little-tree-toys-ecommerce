@@ -74,7 +74,7 @@ const sortedOrders = [...filteredOrders]
 
     await axios.put(
 
-      `http://localhost:5000/admin/orders/${id}`,
+      `https://little-tree-toys-ecommerce.onrender.com/admin/orders/${id}`,
 
       {
         status
@@ -101,7 +101,7 @@ const sortedOrders = [...filteredOrders]
       try {
 
         const response = await axios.get(
-          "http://localhost:5000/admin/orders"
+          "https://little-tree-toys-ecommerce.onrender.com/admin/orders"
         );
 
         setOrders(response.data.orders);

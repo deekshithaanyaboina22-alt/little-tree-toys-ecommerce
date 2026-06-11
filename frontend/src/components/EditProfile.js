@@ -44,7 +44,7 @@ const handleSave = async () => {
 
     const response = await axios.put(
 
-      "http://localhost:5000/update-profile",
+      "https://little-tree-toys-ecommerce.onrender.com/update-profile",
 
       {
 

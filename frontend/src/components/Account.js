@@ -49,7 +49,7 @@ function Account({
 
    const response = await axios.post(
 
-      "http://localhost:5000/register",
+      "https://little-tree-toys-ecommerce.onrender.com/register",
 
       {
 
@@ -94,7 +94,7 @@ function Account({
 
     const response = await axios.post(
 
-      "http://localhost:5000/login",
+      "https://little-tree-toys-ecommerce.onrender.com/login",
 
       {
 

@@ -15,7 +15,7 @@ function MyOrders() {
 
       const response = await axios.get(
 
-        "http://localhost:5000/orders",
+        "https://little-tree-toys-ecommerce.onrender.com/orders",
 
         {
 
